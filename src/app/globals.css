@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 276 100% 97%; /* light lavender */
+    --foreground: 276 80% 20%; /* deep purple for text */
+    --primary: 276 100% 60%; /* vibrant purple */
+    --primary-foreground: 0 0% 100%; /* white */
+    --accent: 288 100% 80%; /* soft pink */
+    --accent-foreground: 276 80% 20%; /* deep purple */
+    --muted: 276 100% 95%; /* very light lavender */
+    --muted-foreground: 276 80% 40%; /* muted purple */
+    --border: 276 100% 90%; /* light border */
+    --input: 276 100% 90%; /* input border */
+    --ring: 276 100% 80%; /* focus ring */
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 276 80% 10%;
+    --foreground: 0 0% 100%;
+    --primary: 276 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 288 100% 80%;
+    --accent-foreground: 276 80% 20%;
+    --muted: 276 80% 20%;
+    --muted-foreground: 276 100% 90%;
+    --border: 276 80% 30%;
+    --input: 276 80% 30%;
+    --ring: 276 100% 80%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(120deg, #f3e6ff 0%, #e9d1ff 50%, #f9d6ff 100%);
+  }
+}
