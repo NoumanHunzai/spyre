@@ -4,7 +4,7 @@ import React, { forwardRef } from "react";
 const ResumeScanSection = forwardRef<HTMLDivElement>((props, ref) => (
   <section
     ref={ref}
-    className="w-full max-w-5xl mx-auto mt-24 bg-white/80 rounded-2xl shadow-lg p-8 flex flex-col gap-8"
+    className="w-full max-w-5xl mx-auto mt-2 bg-white/80 rounded-2xl shadow-lg p-8 flex flex-col gap-8"
   >
     <h2 className="text-2xl font-bold mb-4">New scan</h2>
     <div className="flex flex-col md:flex-row gap-8">
